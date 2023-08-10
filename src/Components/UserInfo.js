@@ -5,8 +5,7 @@ import userPhoto from '../assets/Images/khorshed.jpg'
 
 const UserInfo = () => {
     return (
-        <div className='mx-auto max-w-2xl px-10'>
-
+        <div className='mx-auto max-w-2xl lg:px-10'>
             <div className='flex items-center gap-3 py-2 my-10'>
                 <img src={userPhoto} alt="" className='w-20 h-20 rounded-full shadow-2xl' />
                 <div>
@@ -15,13 +14,13 @@ const UserInfo = () => {
                 </div>
             </div>
             <Form  >
-                <div>
+                <div className=''>
                     <div className='lg:flex gap-2 lg:justify-between mb-5' >
                         <div className="form-control ">
                             <label className="label">
                                 <span className="label-text">Name</span>
                             </label>
-                            <input type="text" placeholder="sara" name="user_first_name" className="input input-bordered font-semibold text-center" />
+                            <input type="text" placeholder="Sara" name="user_first_name" className="input input-bordered font-semibold text-center" />
                         </div>
                         <div className="form-control ">
                             <label className="label">
