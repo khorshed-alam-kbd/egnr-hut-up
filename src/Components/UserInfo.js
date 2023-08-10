@@ -3,9 +3,9 @@ import { Form } from 'react-router-dom';
 
 import userPhoto from '../assets/Images/khorshed.jpg'
 
-const UserProfile = () => {
+const UserInfo = () => {
     return (
-        <div className='mx-auto max-w-3xl p-10'>
+        <div className='mx-auto max-w-2xl px-10'>
 
             <div className='flex items-center gap-3 py-2 my-10'>
                 <img src={userPhoto} alt="" className='w-20 h-20 rounded-full shadow-2xl' />
@@ -61,7 +61,7 @@ const UserProfile = () => {
 
 
                     <div className="form-control mt-6">
-                        <button className="btn bg-orange-500 w-1/4 mx-auto rounded-2xl text-white shadow-2xl">Save Changes</button>
+                        <button className="btn bg-orange-500 w-1/4 mx-auto rounded-2xl text-white shadow-2xl hover:bg-orange-800">Save Changes</button>
                     </div>
                 </div>
             </Form>
@@ -69,4 +69,4 @@ const UserProfile = () => {
     );
 };
 
-export default UserProfile;
+export default UserInfo;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../Componets/Header';
+import Header from '../Components/Header';
 import { Link, Outlet } from 'react-router-dom';
 
 const Dashboard = () => {
@@ -7,9 +7,9 @@ const Dashboard = () => {
         <div>
             <Header />
 
-            <div className='mx-auto max-w-7xl'>
+            <div className='mx-auto max-w-5xl'>
                 <div className='grid grid-cols-4'>
-                    <div className='border'>
+                    <div className='border-r'>
                         <div>
                             <h1 className='text-center text-xl font-bold my-4'>User Profile</h1>
                         </div>
@@ -26,7 +26,7 @@ const Dashboard = () => {
                         <h2 className='text-center text-md text-orange-600 font-semibold my-4'> <i class="fa-solid fa-arrow-up-from-bracket fa-rotate-270 px-2"></i>Log Out</h2>
 
                     </div>
-                    <div className='col-span-3 border'>
+                    <div className='col-span-3 border-l'>
                         <Outlet></Outlet>
                     </div>
                 </div>

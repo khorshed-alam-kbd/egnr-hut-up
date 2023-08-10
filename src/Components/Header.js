@@ -3,7 +3,7 @@ import userPhoto from '../assets/Images/khorshed.jpg'
 
 const Header = () => {
     return (
-        <div className="mx-auto my-10 max-w-7xl">
+        <div className="mx-auto mt-10 max-w-5xl">
 
             <div className="navbar bg-white pb-0 mb-0 border-b">
                 <div className="navbar-start">

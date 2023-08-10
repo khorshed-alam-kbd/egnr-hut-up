@@ -2,7 +2,8 @@ import React from 'react';
 
 import { createBrowserRouter } from "react-router-dom";
 import Dashboard from "./Layout/Dashboard";
-import UserProfile from './Componets/UserProfile';
+import UserInfo from './Components/UserInfo';
+
 
 const router = createBrowserRouter([
     {
@@ -10,8 +11,12 @@ const router = createBrowserRouter([
         element: <Dashboard />,
         children: [
             {
+                path: '/',
+                element: <UserInfo />
+            },
+            {
                 path: '/userinfo',
-                element: <UserProfile></UserProfile>
+                element: <UserInfo />
             },
         ]
     }
